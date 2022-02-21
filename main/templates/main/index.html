@@ -1,0 +1,130 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>index</title>
+<meta name="main" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/w3.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/fix.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head><body>
+<!-- Image -->
+<img src="{%static 'font.jpg'%}" style="width: 100%">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#HOME" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#SHOP" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOP</a>
+    <a href="#SUPPORT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SUPPORT</a>
+    <a href="catalog" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ITEM</a>
+      </div>
+    </div>
+    <div class="w3-content" style="max-width:2000px;margin-top:0px">
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="SHOP">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Shop</h2>
+      <p class="w3-opacity w3-center"><i>"Shut up and take my money"</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://funkopoprussia.com/image/cache/data/TV-Show/Avatar-The-Last-Airbender/funko-pop-russia-The-Legend-of-Korra-Amon-FU46950-180x150.png" alt="FankoPoP" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Амон</b></p>
+            <p class="w3-opacity">Funko POP</p>
+            <p>Амон (Amon) из мультсериала Легенда о Корре Голова: крутящаяся</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;block&#39;">Buy</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://funkopoprussia.com/image/data/TV-Show/WandaVision/funko-pop-70s-Vision-Metallic-WandaVision-718-GameStop-sticker-FU52047.png" alt="nastol" style="width:83%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Вижн 70-е металлик</b></p>
+            <p class="w3-opacity">Funko POP</p>
+            <p>Вижн 70-е металлик (70s Vision Metallic) из сериала Ванда/Вижн</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;block&#39;">Buy</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://funkopoprussia.com/image/cache/data/TV-Show/Avatar-The-Last-Airbender/funko-pop-russia-Aang-Crouching-Avatar-The-Last-Airbender-995-Funko-Shop-fu56478-180x150.png" alt="pop" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Аанг крадущийся</b></p>
+            <p class="w3-opacity">Funko POP</p>
+            <p>Аанг крадущийся (Aang Crouching) из фильма Аватар: Легенда об Аанге</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;block&#39;">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- buy Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32 w3-black">
+        <span onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;" class="w3-button  w3-xlarge w3-display-topright w3-red">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Item</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Item $100</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        </label>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right w3-black">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#SUPPORT" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- The Support Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="SUPPORT">
+    <h2 class="w3-wide w3-center">Support</h2>
+    <p class="w3-opacity w3-center"><i>Pika-pika!?#$@&amp;</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Minsk, Belarus<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +375 33 33 333 33<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: Geeksupport@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+</body>
+</html>
