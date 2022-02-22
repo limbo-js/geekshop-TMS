@@ -1764,5 +1764,8 @@ a {
 }
 
 .app_content {
-    height: calc(60vh - 120px);
+    height: calc(58vh - 120px);
+}
+.appcontent {
+    height: calc(62vh - 33px);
 }

@@ -26,6 +26,7 @@
             color: #3a3a3a;
             height: 2px;
         }
+
     </style>
 </head>
 <body>
@@ -37,7 +38,7 @@
            href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                 class="fa fa-bars"></i></a>
         <a href="/#HOME" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="/#SHOP" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOP</a>
+        <a href="/#NEW" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEW</a>
         <a href="/#SUPPORT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SUPPORT</a>
         <a href="/#item" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ITEM</a>
     </div>
@@ -51,18 +52,35 @@
     </div>
     <!-- End Page Content -->
 </div>
+<h2 class="w3-wide w3-center">*Requir Fields</h2>
+<div class="w3-container w3-content " style="max-width:800px">
+<div class="w3-center">
+    <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Number" required="" name="Number">
+            </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+        <br>
+         <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+    </form>
+    <div class="w3-container w3-content " style="max-width:800px">
+</div>
 </div>
 </div>
 
 <!-- Footer -->
-
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
 </body>
 </html>
