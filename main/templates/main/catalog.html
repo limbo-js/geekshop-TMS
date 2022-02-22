@@ -22,10 +22,12 @@
     .w3-bar-item {
         padding: 200px
     }
+
     item {
         padding: 40px;
         border: 1px silver;
     }
+
     hr {
         border: none;
         background-color: #3a3a3a;
@@ -42,47 +44,51 @@
         <a href="/#NEW" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEW</a>
         <a href="#SUPPORT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SUPPORT</a>
         <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ITEM</a>
-        <a href="/shoper" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src="{%static 'shopp.png'%}" style="width: 24px"></a>
+        <a href="/shoper" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src="{%static 'shopp.png'%}"
+                                                                                            style="width: 24px"></a>
     </div>
 </div>
 
 
-
-
-
- <div class="w3-container w3-content w3-padding-64 "  style="max-width:800px">
-          <h2 class="w3-wide w3-center">item</h2>
-     <hr>
-     <item>{% for item in it %}
-      {% if item.image %}
-      <img src="{{item.image.url}}" alt="FankoPoP" style="width:30%" class="w3-hover-opacity">
-          {% endif %}
-          <p><b>{{ item.name }}</b></p>
-            <p class="w3-opacity">Funko POP</p>
-            <p>{{ item.text }}</p>
-         <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;block&#39;">{{item.coast}}$</button>
-         <hr>
-         {% endfor %}
-     </item>
-     </div>
+<div class="w3-container w3-content w3-padding-64 " style="max-width:800px">
+    <h2 class="w3-wide w3-center">item</h2>
+    <hr>
+    <item>{% for item in it %}
+        {% if item.image %}
+        <img src="{{item.image.url}}" alt="FankoPoP" style="width:30%" class="w3-hover-opacity">
+        {% endif %}
+        <p><b>{{ item.name }}</b></p>
+        <p class="w3-opacity">Funko POP</p>
+        <p>{{ item.text }}</p>
+        <button class="w3-button w3-black w3-margin-bottom"
+                onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;block&#39;">{{item.coast}}$
+        </button>
+        <hr>
+        {% endfor %}
+    </item>
+</div>
 </div>
 <!-- buy Modal -->
 
-  <div id="ticketModal" class="w3-modal">
+<div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32 w3-black">
-        <span onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;" class="w3-button  w3-xlarge w3-display-topright w3-red">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Item</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Item $100</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-          <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right w3-black">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#SUPPORT" class="w3-text-blue">help?</a></p>
-      </div>
+        <header class="w3-container w3-teal w3-center w3-padding-32 w3-black">
+            <span onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;"
+                  class="w3-button  w3-xlarge w3-display-topright w3-red">×</span>
+            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Item</h2>
+        </header>
+        <div class="w3-container">
+            <p><label><i class="fa fa-shopping-cart"></i> Item $100</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="How many?">
+            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right w3-black">PAY <i
+                    class="fa fa-check"></i></button>
+            <button class="w3-button w3-red w3-section"
+                    onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;">Close <i
+                    class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#SUPPORT" class="w3-text-blue">help?</a></p>
+        </div>
     </div>
-  </div>
+</div>
 </div>
 
 <!-- The Support Section -->
@@ -122,9 +128,8 @@
         </div>
     </div>
 </div>
-
 <!-- End Page Content -->
-</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -140,7 +145,7 @@
         }
     </script>
 
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
