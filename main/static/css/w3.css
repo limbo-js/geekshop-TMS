@@ -941,7 +941,7 @@ a {
     display: block
 }
 
-.w3-display-container:hover span.w3-display-hover {
+.w3-display-container:hover w3-display-hover  {
     display: inline-block
 }
 
@@ -1746,4 +1746,16 @@ a {
 
 .w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff !important
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+.child {
+    width: 30%;
+}
+.child-active {
+    flex-shrink: 1;
 }

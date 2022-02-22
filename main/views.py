@@ -8,6 +8,10 @@ def index(request):
     return render(request, 'main/index.html')
 
 
+def shoper(request):
+    return render(request, 'main/shoper.html')
+
+
 class ItemBD(ListView):
     models = Item
     template_name = 'main/catalog.html'
@@ -20,15 +24,12 @@ class ItemBD(ListView):
         context = super().get_context_data(**kwargs)
         return context
 
-
-def catalog(request, EmptyPage=None, PageNotAnInteger=None):
-    item = Item.objects.all()
-    paginator = Paginator(item, 4)
-    page = request.GET.get('page')
-    try:
-        item = paginator.page(page)
-    except PageNotAnInteger:
-        item = paginator.page(1)
-    except EmptyPage:
-        item = paginator.page(paginator.num_pages)
-    return render(request, 'main/catalog.html', {'page': page, 'item': item, })
+# <def catalog(request, EmptyPage=None, PageNotAnInteger=None):
+#   page = request.GET.get('page')
+#    try:
+#        item = paginator.page(page)
+#    except PageNotAnInteger:
+#        item = paginator.page(1)
+#    except EmptyPage:
+#        item = paginator.page(paginator.num_pages)
+#    return render(request, 'main/catalog.html', {'page': page, 'item': item, })
