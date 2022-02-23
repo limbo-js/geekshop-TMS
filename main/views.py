@@ -7,6 +7,7 @@ def index(request):
     return render(request, 'main/index.html')
 
 
+
 def shoper(request):
     return render(request, 'main/shoper.html')
 
